@@ -9,13 +9,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      
 </head>
 
 <body class="flex justify-center bg-emerald-800" >
-    <div class="bg-white mt-60 w-80 text-center rounded-lg py-28 shadow-2xl  " >
+    
+    <div class="bg-white mt-5 w-80 text-center rounded-lg py-28 shadow-2xl  " >
         <h1 class="text-lg font-bold" >Here! A no hassle PWA</h1>
+        <canvas id="myChart"></canvas>
         <p>Thank <a class="text-blue-600 animate-pulse  " href="ykingdev.tech">ykingdev</a> (that is me)</p>
     </div>
+      
+      <script>
+        const ctx = document.getElementById('myChart');
+      
+        new Chart(ctx, {
+          type: 'pie',
+          data: {
+            labels: ['Teenagers', 'Elderly', 'Babies', 'Students'],
+            datasets: [{
+              data: [12, 15, 14, 13,]
+            }]
+          },
+          options: {
+          }
+        });
+      </script>
 </body>
 
 
