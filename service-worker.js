@@ -4,8 +4,7 @@ if ('serviceWorker' in navigator) { navigator.serviceWorker.register('servicewor
 
 self.addEventListener("install", (event) => {
     event.waitUntil(
-      caches
-        .open("v1")
+      caches.open("Page")
         .then((cache) =>
           cache.addAll([
             "/EasyPWA/index.html"
