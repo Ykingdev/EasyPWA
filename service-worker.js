@@ -7,7 +7,8 @@ self.addEventListener("install", (event) => {
       caches.open("Page")
         .then((cache) =>
           cache.addAll([
-            "/EasyPWA/index.html"
+            "/EasyPWA/index.html",
+            "/EasyPWA/css/output.css"
           ])
         )
     );
@@ -28,12 +29,12 @@ self.addEventListener("install", (event) => {
               // and serve second one
               let responseClone = response.clone();
   
-              caches.open("v1").then((cache) => {
+              caches.open("Page").then((cache) => {
                 cache.put(event.request, responseClone);
               });
               return response;
             })
-            .catch(() => caches.match("/"));
+            .catch(() => caches.match("/EasyPWA/"));
         }
       })
     );

@@ -8,7 +8,7 @@
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./css/output.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       
 </head>
@@ -19,22 +19,7 @@
         <h1 class="text-lg font-bold" >Here! A no hassle PWA</h1>
         <canvas id="myChart"></canvas>
         <a class="text-blue-600 animate-pulse" target="_blank"   href="http://ykingdev.tech/">ykingdev</a>
-      
-      <script>
-        const ctx = document.getElementById('myChart');
-      
-        new Chart(ctx, {
-          type: 'pie',
-          data: {
-            labels: ['Teenagers', 'Elderly', 'Babies', 'Students'],
-            datasets: [{
-              data: [12, 15, 14, 13,]
-            }]
-          },
-          options: {
-          }
-        });
-      </script>
+      </div>
 </body>
 
 
