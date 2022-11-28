@@ -12,4 +12,12 @@ go to the Developer tools tab in chrome and go to lighthouse and analyze page lo
 for the creation of the images I just went to the [site](https://favicon.io/favicon-converter/) and threw in a png file. 
 **This also creates a webmanifest.**
 
-Good luck!🫡
+
+### bonus: Tailwind css
+For this project I've used the tailwind css framework.
+I installed it into this repo so in order to keep working with that 
+run these commands: 
+    npm install -D tailwindcss
+    npx tailwindcss -i ./css/input.css -o ./css/output.css --watch
+
+Have fun building and good luck!🫡
