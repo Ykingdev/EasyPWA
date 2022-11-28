@@ -9,7 +9,7 @@ So here I made a really easy starter file which with some basic knowledge about 
 If you want to just play around and see what does what delete code.
 go to the Developer tools tab in chrome and go to lighthouse and analyze page load for just the progressive web app. This should give you a better understanding of what does what exactly!
 
-for the creation of the images I just went to the [site](https://favicon.io/favicon-converter/) and threw in a png file. 
+for the creation of the images I just went to the [favicon.io website](https://favicon.io/favicon-converter/) and threw in a png file. 
 **This also creates a webmanifest.**
 
 
